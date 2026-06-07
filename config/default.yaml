@@ -4,7 +4,12 @@
 paths:
   pdf: data/raw/ai_agents_guidebook.pdf
   vectorstore_dir: data/vectorstore
-  golden_dataset: data/evaluation/golden_dataset.json
+  # NOTE: The committed evaluation data uses the split files from the source project:
+  #   - ai_agents_guidebook_rag_eval_questions.json
+  #   - ai_agents_guidebook_ground_truths.json
+  # Update this (or the loader) if you combine them into the single golden_dataset.json format
+  # expected by EvaluationHarness (list of {question, ground_truth, expected_pages, ...}).
+  golden_dataset: data/evaluation/ai_agents_guidebook_rag_eval_questions.json
   artifacts_dir: artifacts
 
 chunking:
