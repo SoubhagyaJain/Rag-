@@ -93,7 +93,9 @@ chroma_db/
 
 # Large model caches (optional - uncomment if you want to ignore)
 # ~/.cache/huggingface/
-# ~/.cache/torch/# Large source PDF (33MB+) - do not bloat the git repo.
+# ~/.cache/torch/
+
+# Large source PDF (33MB+) - do not bloat the git repo.
 # Users should obtain the book PDF separately or the owner can share via other means.
 # Consider Git LFS in the future if you want to track it.
 data/raw/*.pdf
