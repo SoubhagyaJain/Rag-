@@ -1,0 +1,829 @@
+{
+  "dataset_info": {
+    "name": "AI_Agents_Guidebook_100_RAG_Eval_Questions",
+    "source": "AI Agents: The Illustrated Guidebook (2025 Edition)",
+    "authors": "Avi Chawla & Akshay Pachaar",
+    "website": "DailyDoseofDS.com",
+    "total_questions": 100,
+    "description": "High-quality evaluation dataset for RAG systems built on the AI Agents illustrated guidebook. Includes factual, conceptual, code, workflow, and comparison questions across all major sections. Ideal for RAGAS, golden datasets, retriever benchmarking, and end-to-end pipeline testing.",
+    "created": "2026-06-07",
+    "categories": [
+      "Fundamentals & What is an AI Agent",
+      "Agent vs LLM vs RAG",
+      "Building Blocks of AI Agents",
+      "5 Agentic AI Design Patterns",
+      "5 Levels of Agentic AI Systems",
+      "AI Agents Projects & Implementation"
+    ],
+    "question_types": ["factual", "conceptual", "code_implementation", "workflow", "comparison", "best_practice", "application"],
+    "use_cases": [
+      "RAGAS evaluation (faithfulness, answer_relevancy, context_precision)",
+      "Golden test set for fine-tuning or prompt optimization",
+      "Retriever quality testing (context recall)",
+      "End-to-end RAG pipeline benchmarking",
+      "Synthetic data generation for training"
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "Fundamentals & What is an AI Agent",
+      "question": "What is the estimated total reading time of the AI Agents Illustrated Guidebook?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["book-metadata", "overview"]
+    },
+    {
+      "id": 2,
+      "category": "Fundamentals & What is an AI Agent",
+      "question": "What 2-minute assessment does the book recommend at the beginning, and what does it provide?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["book-metadata", "personalization"]
+    },
+    {
+      "id": 3,
+      "category": "Fundamentals & What is an AI Agent",
+      "question": "In the opening example, what iterative steps does a user typically perform when using a standard LLM to generate an AI research trends report?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["example", "llm-limitations"]
+    },
+    {
+      "id": 4,
+      "category": "Fundamentals & What is an AI Agent",
+      "question": "How does a Research Agent autonomously search and retrieve papers from arXiv, Semantic Scholar, or Google Scholar?",
+      "type": "workflow",
+      "difficulty": "medium",
+      "tags": ["agent-example", "research-agent"]
+    },
+    {
+      "id": 5,
+      "category": "Fundamentals & What is an AI Agent",
+      "question": "Describe the sequential roles of the Filtering Agent, Summarization Agent, and Formatting Agent in the research report example.",
+      "type": "workflow",
+      "difficulty": "medium",
+      "tags": ["multi-agent", "research-workflow"]
+    },
+    {
+      "id": 6,
+      "category": "Fundamentals & What is an AI Agent",
+      "question": "Provide the formal definition of an AI Agent given in the guidebook.",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["definition"]
+    },
+    {
+      "id": 7,
+      "category": "Fundamentals & What is an AI Agent",
+      "question": "What three core components (Memory, Tools, LLM) are highlighted in the central 'What is an AI Agent?' diagram?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["diagram", "components"]
+    },
+    {
+      "id": 8,
+      "category": "Fundamentals & What is an AI Agent",
+      "question": "According to the book, how do AI Agents self-refine their outputs without constant human intervention?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["self-improvement", "agent-capabilities"]
+    },
+    {
+      "id": 9,
+      "category": "Fundamentals & What is an AI Agent",
+      "question": "What visual shows the difference between a user interacting directly with ChatGPT versus an agentic workflow?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["diagram", "comparison"]
+    },
+    {
+      "id": 10,
+      "category": "Fundamentals & What is an AI Agent",
+      "question": "List the key capabilities of AI Agents mentioned (reason, think, plan, take actions, correct themselves, etc.).",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["capabilities", "definition"]
+    },
+    {
+      "id": 11,
+      "category": "Fundamentals & What is an AI Agent",
+      "question": "Why can AI Agents handle the full research process end-to-end more effectively than a human + LLM loop?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["agent-advantage", "autonomy"]
+    },
+    {
+      "id": 12,
+      "category": "Fundamentals & What is an AI Agent",
+      "question": "What is the main lesson from the 'What is an AI Agent?' section?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["takeaway", "summary"]
+    },
+    {
+      "id": 13,
+      "category": "Agent vs LLM vs RAG",
+      "question": "What simple analogy does the book use to explain LLM, RAG, and Agent?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["analogy", "comparison"]
+    },
+    {
+      "id": 14,
+      "category": "Agent vs LLM vs RAG",
+      "question": "Why is a pure LLM described as 'smart but static'?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["llm-limitations"]
+    },
+    {
+      "id": 15,
+      "category": "Agent vs LLM vs RAG",
+      "question": "What specific real-world capabilities does a standalone LLM lack (web access, APIs, fresh facts)?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["llm-limitations"]
+    },
+    {
+      "id": 16,
+      "category": "Agent vs LLM vs RAG",
+      "question": "How does RAG make an LLM aware of updated and relevant information without retraining?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["rag-explanation"]
+    },
+    {
+      "id": 17,
+      "category": "Agent vs LLM vs RAG",
+      "question": "What does RAG retrieve and inject into the LLM as context?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["rag-mechanism"]
+    },
+    {
+      "id": 18,
+      "category": "Agent vs LLM vs RAG",
+      "question": "What key capability does an Agent add on top of RAG or a plain LLM?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["agent-advantage"]
+    },
+    {
+      "id": 19,
+      "category": "Agent vs LLM vs RAG",
+      "question": "According to the book, what decisions and orchestration does an Agent perform?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["agent-capabilities"]
+    },
+    {
+      "id": 20,
+      "category": "Agent vs LLM vs RAG",
+      "question": "Describe the visual comparison shown for Agent vs LLM vs RAG.",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["diagram", "comparison"]
+    },
+    {
+      "id": 21,
+      "category": "Agent vs LLM vs RAG",
+      "question": "In what way does an Agent behave like a 'real assistant'?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["analogy"]
+    },
+    {
+      "id": 22,
+      "category": "Agent vs LLM vs RAG",
+      "question": "What is the core message of the 'Agent vs LLM vs RAG' section?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["takeaway"]
+    },
+    {
+      "id": 23,
+      "category": "Building Blocks of AI Agents",
+      "question": "What are the six essential building blocks of AI Agents listed in the guidebook?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["building-blocks", "list"]
+    },
+    {
+      "id": 24,
+      "category": "Building Blocks of AI Agents",
+      "question": "Why does assigning a specific role (e.g., 'Senior contract lawyer') significantly improve agent performance?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["role-playing", "best-practice"]
+    },
+    {
+      "id": 25,
+      "category": "Building Blocks of AI Agents",
+      "question": "How does role assignment influence an agent's reasoning and retrieval process?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["role-playing"]
+    },
+    {
+      "id": 26,
+      "category": "Building Blocks of AI Agents",
+      "question": "What problems arise when an agent is overloaded with too many tasks or too much data?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["focus", "pitfalls"]
+    },
+    {
+      "id": 27,
+      "category": "Building Blocks of AI Agents",
+      "question": "Why do specialized agents with narrow focus consistently outperform a single general-purpose agent?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["focus", "best-practice"]
+    },
+    {
+      "id": 28,
+      "category": "Building Blocks of AI Agents",
+      "question": "Give the book's example of what a marketing agent should focus on versus what it should avoid.",
+      "type": "application",
+      "difficulty": "easy",
+      "tags": ["example", "focus"]
+    },
+    {
+      "id": 29,
+      "category": "Building Blocks of AI Agents",
+      "question": "What four key abilities do Tools give to an Agent?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["tools"]
+    },
+    {
+      "id": 30,
+      "category": "Building Blocks of AI Agents",
+      "question": "Name at least six of the 12 powerful CrewAI tools illustrated in the book.",
+      "type": "factual",
+      "difficulty": "medium",
+      "tags": ["crewai-tools", "list"]
+    },
+    {
+      "id": 31,
+      "category": "Building Blocks of AI Agents",
+      "question": "Which external API is used in the Currency Converter Tool example to fetch live exchange rates?",
+      "type": "code_implementation",
+      "difficulty": "easy",
+      "tags": ["custom-tool", "api"]
+    },
+    {
+      "id": 32,
+      "category": "Building Blocks of AI Agents",
+      "question": "What Pydantic BaseModel class is defined for the input schema (CurrencyConverterInput)?",
+      "type": "code_implementation",
+      "difficulty": "medium",
+      "tags": ["pydantic", "custom-tool"]
+    },
+    {
+      "id": 33,
+      "category": "Building Blocks of AI Agents",
+      "question": "What method must every custom BaseTool class implement in CrewAI, and when is it called?",
+      "type": "code_implementation",
+      "difficulty": "medium",
+      "tags": ["crewai", "custom-tool"]
+    },
+    {
+      "id": 34,
+      "category": "Building Blocks of AI Agents",
+      "question": "Describe (or quote) the _run method logic in the CurrencyConverterTool example.",
+      "type": "code_implementation",
+      "difficulty": "hard",
+      "tags": ["code", "custom-tool"]
+    },
+    {
+      "id": 35,
+      "category": "Building Blocks of AI Agents",
+      "question": "How is a custom tool attached to a CrewAI Agent?",
+      "type": "code_implementation",
+      "difficulty": "easy",
+      "tags": ["crewai"]
+    },
+    {
+      "id": 36,
+      "category": "Building Blocks of AI Agents",
+      "question": "What problem does exposing tools via MCP (Model Context Protocol) solve compared to embedding them in every Crew?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["mcp", "tools", "reusability"]
+    },
+    {
+      "id": 37,
+      "category": "Building Blocks of AI Agents",
+      "question": "What transport is used when starting the MCP server in the example (mcp.run(transport=...))?",
+      "type": "code_implementation",
+      "difficulty": "easy",
+      "tags": ["mcp", "server"]
+    },
+    {
+      "id": 38,
+      "category": "Building Blocks of AI Agents",
+      "question": "How does a CrewAI agent connect to and use a remotely exposed MCP tool via MCPServerAdapter?",
+      "type": "code_implementation",
+      "difficulty": "medium",
+      "tags": ["mcp", "crewai"]
+    },
+    {
+      "id": 39,
+      "category": "Building Blocks of AI Agents",
+      "question": "What is the server URL pattern shown for the currency converter MCP tool?",
+      "type": "code_implementation",
+      "difficulty": "easy",
+      "tags": ["mcp"]
+    },
+    {
+      "id": 40,
+      "category": "Building Blocks of AI Agents",
+      "question": "What output format does the MCP-based currency conversion return in the example?",
+      "type": "code_implementation",
+      "difficulty": "easy",
+      "tags": ["mcp", "example-output"]
+    },
+    {
+      "id": 41,
+      "category": "Building Blocks of AI Agents",
+      "question": "Why is cooperation critical in multi-agent systems?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["cooperation", "multi-agent"]
+    },
+    {
+      "id": 42,
+      "category": "Building Blocks of AI Agents",
+      "question": "Give the book's example of a 4-agent financial analysis system and the role of each agent.",
+      "type": "application",
+      "difficulty": "medium",
+      "tags": ["multi-agent-example", "financial"]
+    },
+    {
+      "id": 43,
+      "category": "Building Blocks of AI Agents",
+      "question": "List three examples of useful guardrails for agents mentioned in the guidebook.",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["guardrails"]
+    },
+    {
+      "id": 44,
+      "category": "Building Blocks of AI Agents",
+      "question": "Why are guardrails necessary for powerful agents?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["guardrails", "safety"]
+    },
+    {
+      "id": 45,
+      "category": "Building Blocks of AI Agents",
+      "question": "What are the three types of memory in AI agents (short-term, long-term, entity)?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["memory"]
+    },
+    {
+      "id": 46,
+      "category": "Building Blocks of AI Agents",
+      "question": "How does memory benefit an AI-powered tutoring system?",
+      "type": "application",
+      "difficulty": "medium",
+      "tags": ["memory", "example"]
+    },
+    {
+      "id": 47,
+      "category": "Building Blocks of AI Agents",
+      "question": "What happens to an agent that has no memory at all?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["memory", "pitfalls"]
+    },
+    {
+      "id": 48,
+      "category": "Building Blocks of AI Agents",
+      "question": "How do guardrails prevent hallucination, infinite loops, or bad decisions?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["guardrails"]
+    },
+    {
+      "id": 49,
+      "category": "Building Blocks of AI Agents",
+      "question": "What is the relationship between guardrails and the 'Objective' in the building blocks diagram?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["guardrails", "diagram"]
+    },
+    {
+      "id": 50,
+      "category": "Building Blocks of AI Agents",
+      "question": "Why is memory considered one of the most critical components of reliable AI agents?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["memory", "importance"]
+    },
+    {
+      "id": 51,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "Describe the Reflection pattern and how it improves output quality.",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["reflection-pattern"]
+    },
+    {
+      "id": 52,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "Explain the Tool Use pattern and what external resources it allows the LLM to access.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["tool-use-pattern"]
+    },
+    {
+      "id": 53,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "What is the ReAct (Reason and Act) pattern, and what is its core loop?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["react-pattern"]
+    },
+    {
+      "id": 54,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "Why do frameworks like CrewAI primarily rely on the ReAct pattern by default?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["react", "crewai"]
+    },
+    {
+      "id": 55,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "What does the Planning pattern involve, and how do you enable it in CrewAI?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["planning-pattern", "crewai"]
+    },
+    {
+      "id": 56,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "Describe the Multi-Agent pattern shown in the book's visual.",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["multi-agent-pattern"]
+    },
+    {
+      "id": 57,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "In the Reflection pattern diagram, what happens during the 'Iterate' step?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["diagram", "reflection"]
+    },
+    {
+      "id": 58,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "How does the Tool Use pattern help an LLM go beyond its training data?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["tool-use"]
+    },
+    {
+      "id": 59,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "What does the example multi-agent system output demonstrate about ReAct 'Thought' steps?",
+      "type": "application",
+      "difficulty": "medium",
+      "tags": ["react-example", "code-output"]
+    },
+    {
+      "id": 60,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "What note does the book give about using planning=True in CrewAI?",
+      "type": "code_implementation",
+      "difficulty": "easy",
+      "tags": ["crewai", "planning"]
+    },
+    {
+      "id": 61,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "How do the five design patterns collectively allow LLMs to refine outputs through self-evaluation, planning, and collaboration?",
+      "type": "conceptual",
+      "difficulty": "hard",
+      "tags": ["patterns-overview", "takeaway"]
+    },
+    {
+      "id": 62,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "Compare the Reflection pattern with the ReAct pattern.",
+      "type": "comparison",
+      "difficulty": "medium",
+      "tags": ["comparison", "patterns"]
+    },
+    {
+      "id": 63,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "Give one real-world use case for each of the five design patterns.",
+      "type": "application",
+      "difficulty": "medium",
+      "tags": ["use-cases"]
+    },
+    {
+      "id": 64,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "What problem does each pattern primarily solve?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["patterns-purpose"]
+    },
+    {
+      "id": 65,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "In the Planning pattern visual, what happens after the Planner generates tasks?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["diagram", "planning"]
+    },
+    {
+      "id": 66,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "How does the Multi-Agent pattern handle delegation between agents?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["multi-agent"]
+    },
+    {
+      "id": 67,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "What is shown in the ReAct loop diagram (Thought → Action → Observation → Answer)?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["diagram", "react"]
+    },
+    {
+      "id": 68,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "Why is the Planning pattern useful for complex tasks?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["planning"]
+    },
+    {
+      "id": 69,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "How does the book illustrate that ReAct is happening 'under the hood' in many agent frameworks?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["react", "frameworks"]
+    },
+    {
+      "id": 70,
+      "category": "5 Agentic AI Design Patterns",
+      "question": "What is the key takeaway from the '5 Agentic AI Design Patterns' section?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["takeaway"]
+    },
+    {
+      "id": 71,
+      "category": "5 Levels of Agentic AI Systems",
+      "question": "What characterizes Level 1: Basic Responder?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["levels", "basic-responder"]
+    },
+    {
+      "id": 72,
+      "category": "5 Levels of Agentic AI Systems",
+      "question": "In Level 2: Router pattern, who defines the possible paths/functions?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["router-pattern"]
+    },
+    {
+      "id": 73,
+      "category": "5 Levels of Agentic AI Systems",
+      "question": "What decision-making power does the LLM have in the Router pattern?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["router"]
+    },
+    {
+      "id": 74,
+      "category": "5 Levels of Agentic AI Systems",
+      "question": "Describe Level 3: Tool Calling — what does the LLM control?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["tool-calling"]
+    },
+    {
+      "id": 75,
+      "category": "5 Levels of Agentic AI Systems",
+      "question": "In Level 4: Multi-agent pattern, what is the role of the Manager Agent?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["multi-agent-level"]
+    },
+    {
+      "id": 76,
+      "category": "5 Levels of Agentic AI Systems",
+      "question": "Who lays out the hierarchy, roles, and tools in Level 4?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["multi-agent"]
+    },
+    {
+      "id": 77,
+      "category": "5 Levels of Agentic AI Systems",
+      "question": "What makes Level 5: Autonomous pattern the most advanced?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["autonomous"]
+    },
+    {
+      "id": 78,
+      "category": "5 Levels of Agentic AI Systems",
+      "question": "In Level 5, what does the LLM generate and execute independently?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["autonomous", "code-generation"]
+    },
+    {
+      "id": 79,
+      "category": "5 Levels of Agentic AI Systems",
+      "question": "How does control of execution flow differ across the five levels?",
+      "type": "comparison",
+      "difficulty": "hard",
+      "tags": ["levels-comparison"]
+    },
+    {
+      "id": 80,
+      "category": "5 Levels of Agentic AI Systems",
+      "question": "Which level most closely resembles a human developer writing and running code?",
+      "type": "application",
+      "difficulty": "easy",
+      "tags": ["autonomous"]
+    },
+    {
+      "id": 81,
+      "category": "5 Levels of Agentic AI Systems",
+      "question": "What is the progression shown in the '5 Levels of Agentic AI Systems' visual?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["diagram", "levels"]
+    },
+    {
+      "id": 82,
+      "category": "5 Levels of Agentic AI Systems",
+      "question": "In which level does a human still guide the entire flow?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["basic-responder"]
+    },
+    {
+      "id": 83,
+      "category": "5 Levels of Agentic AI Systems",
+      "question": "How does the LLM's autonomy increase from Level 1 to Level 5?",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "tags": ["progression", "autonomy"]
+    },
+    {
+      "id": 84,
+      "category": "5 Levels of Agentic AI Systems",
+      "question": "What feedback loop is shown in the Autonomous pattern diagram?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["diagram", "autonomous"]
+    },
+    {
+      "id": 85,
+      "category": "5 Levels of Agentic AI Systems",
+      "question": "What is the main message of the '5 Levels of Agentic AI Systems' section?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["takeaway"]
+    },
+    {
+      "id": 86,
+      "category": "AI Agents Projects & Implementation",
+      "question": "List all 12 projects covered in the 'AI Agents Projects' section of the guidebook.",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["projects-list"]
+    },
+    {
+      "id": 87,
+      "category": "AI Agents Projects & Implementation",
+      "question": "What is the goal of #1 Agentic RAG project?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["agentic-rag"]
+    },
+    {
+      "id": 88,
+      "category": "AI Agents Projects & Implementation",
+      "question": "What is the tech stack used in the Agentic RAG project?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["agentic-rag", "tech-stack"]
+    },
+    {
+      "id": 89,
+      "category": "AI Agents Projects & Implementation",
+      "question": "Describe the high-level workflow of the Agentic RAG project (Retriever Agent + Writer Agent).",
+      "type": "workflow",
+      "difficulty": "medium",
+      "tags": ["agentic-rag", "workflow"]
+    },
+    {
+      "id": 90,
+      "category": "AI Agents Projects & Implementation",
+      "question": "In the Agentic RAG implementation, which LLM is set up via Ollama in the example?",
+      "type": "code_implementation",
+      "difficulty": "easy",
+      "tags": ["agentic-rag", "ollama", "qwen"]
+    },
+    {
+      "id": 91,
+      "category": "AI Agents Projects & Implementation",
+      "question": "What two tools does the Researcher Agent use in the Agentic RAG example (Firecrawl + another)?",
+      "type": "code_implementation",
+      "difficulty": "easy",
+      "tags": ["agentic-rag", "tools"]
+    },
+    {
+      "id": 92,
+      "category": "AI Agents Projects & Implementation",
+      "question": "What class is defined in the LitServe example for the Agentic RAG API (class ... (ls.API))?",
+      "type": "code_implementation",
+      "difficulty": "medium",
+      "tags": ["litserve", "agentic-rag"]
+    },
+    {
+      "id": 93,
+      "category": "AI Agents Projects & Implementation",
+      "question": "What are the four key methods implemented in the LitServe AgenticRAGAPI class?",
+      "type": "code_implementation",
+      "difficulty": "medium",
+      "tags": ["litserve", "methods"]
+    },
+    {
+      "id": 94,
+      "category": "AI Agents Projects & Implementation",
+      "question": "What does the decode_request method do in the Agentic RAG LitServe example?",
+      "type": "code_implementation",
+      "difficulty": "easy",
+      "tags": ["litserve", "decode"]
+    },
+    {
+      "id": 95,
+      "category": "AI Agents Projects & Implementation",
+      "question": "What happens inside the predict method of the deployed Agentic RAG service?",
+      "type": "code_implementation",
+      "difficulty": "medium",
+      "tags": ["litserve", "predict"]
+    },
+    {
+      "id": 96,
+      "category": "AI Agents Projects & Implementation",
+      "question": "How is the final response handled in encode_response?",
+      "type": "code_implementation",
+      "difficulty": "easy",
+      "tags": ["litserve", "encode"]
+    },
+    {
+      "id": 97,
+      "category": "AI Agents Projects & Implementation",
+      "question": "What is the purpose of using LitServe in the Agentic RAG project?",
+      "type": "conceptual",
+      "difficulty": "easy",
+      "tags": ["litserve", "deployment"]
+    },
+    {
+      "id": 98,
+      "category": "AI Agents Projects & Implementation",
+      "question": "Which project in the book focuses on Human-like Memory for Agents?",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["projects", "memory-project"]
+    },
+    {
+      "id": 99,
+      "category": "AI Agents Projects & Implementation",
+      "question": "Name two other multi-agent projects from the list (e.g., Flight finder, Hotel finder, Book Writer, etc.).",
+      "type": "factual",
+      "difficulty": "easy",
+      "tags": ["projects-list"]
+    },
+    {
+      "id": 100,
+      "category": "AI Agents Projects & Implementation",
+      "question": "What is one key lesson or best practice you can extract from the projects section for building production agentic systems?",
+      "type": "best_practice",
+      "difficulty": "medium",
+      "tags": ["takeaway", "production"]
+    }
+  ]
+}

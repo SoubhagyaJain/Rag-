@@ -1,0 +1,107 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+data/vectorstore/
+data/processed/
+artifacts/
+*.log
+logs/
+*.sqlite
+*.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Chroma / vector artifacts
+chroma_db/
+*.bin
+*.pickle
+
+# Large model caches (optional - uncomment if you want to ignore)
+# ~/.cache/huggingface/
+# ~/.cache/torch/# Large source PDF (33MB+) - do not bloat the git repo.
+# Users should obtain the book PDF separately or the owner can share via other means.
+# Consider Git LFS in the future if you want to track it.
+data/raw/*.pdf
+data/raw/*guidebook*.pdf
+data/raw/*Agents*.pdf
+
+# Keep the folder structure
+!data/raw/.gitkeep
+
+# Any other large raw data files
+data/raw/large/

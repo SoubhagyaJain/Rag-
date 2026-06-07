@@ -1,0 +1,125 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rag-illustrated-agents"
+version = "0.1.0"
+description = "Evaluation-driven, structure-aware RAG system for the AI Agents: The Illustrated Guidebook (2025)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+  { name = "Soubhagya Jain (project lead)", email = "soubhagya@example.com" }
+]
+keywords = [
+  "rag",
+  "retrieval-augmented-generation",
+  "ai-agents",
+  "structure-aware-chunking",
+  "evaluation",
+  "hybrid-search",
+  "parent-child-retrieval",
+  "production-rag"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Text Processing :: Indexing",
+]
+
+dependencies = [
+  # Core
+  "pydantic>=2.8",
+  "pydantic-settings>=2.3",
+  "pyyaml>=6.0",
+  "python-dotenv>=1.0",
+  "loguru>=0.7",
+  "rich>=13.0",
+  "typer[all]>=0.12",
+
+  # PDF & Structure-aware parsing (critical for illustrated book)
+  "pdfplumber>=0.11.0",
+
+  # Embeddings & vector
+  "sentence-transformers>=3.0.0",
+  "chromadb>=0.5.0",
+  "numpy>=1.26",
+
+  # Sparse retrieval
+  "rank-bm25>=0.2.2",
+
+  # Reranking (local cross-encoder support)
+  "torch>=2.3.0",
+
+  # Utilities
+  "tenacity>=8.2",
+  "tqdm>=4.66",
+  "python-dateutil>=2.8",
+]
+
+[project.optional-dependencies]
+llm = [
+  # For generation + LLM-as-judge (local-first)
+  "ollama>=0.3.0",
+  # Or OpenAI-compatible
+  "openai>=1.30.0",
+]
+dev = [
+  "ruff>=0.5",
+  "pytest>=8.0",
+  "pytest-asyncio>=0.23",
+  "mypy>=1.10",
+  "pre-commit>=3.7",
+  "jupyterlab>=4.0",
+  "ipykernel>=6.0",
+  "matplotlib>=3.8",
+  "pandas>=2.2",
+]
+eval = [
+  # Future: ragas or custom LLM judges
+  "scikit-learn>=1.5",
+]
+
+[project.scripts]
+rag-ingest = "scripts.ingest:app"
+rag-evaluate = "scripts.evaluate:app"
+rag-query = "scripts.query:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rag"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = ["notebooks/*", "data/*", ".venv/*", "__pycache__/*", "artifacts/*"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "C4", "PIE", "Q", "RUF"]
+ignore = ["E501", "B008", "B904"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+exclude = ["notebooks", "data", "tests", "scripts"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra -q --strict-markers"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.uv]
+dev-dependencies = ["ruff", "pytest", "jupyterlab"]

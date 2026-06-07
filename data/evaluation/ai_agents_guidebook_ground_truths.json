@@ -1,0 +1,412 @@
+{
+  "ground_truth_dataset": {
+    "name": "AI_Agents_Guidebook_Ground_Truths_v1",
+    "source_document": "AI Agents: The Illustrated Guidebook (2025 Edition) by Avi Chawla & Akshay Pachaar",
+    "total_questions": 100,
+    "description": "High-quality ground truth answers extracted directly from the guidebook. Use this together with the questions JSON for RAGAS evaluation, golden datasets, and pipeline benchmarking. Answers are concise but faithful to the source.",
+    "created": "2026-06-07",
+    "how_to_use": "Pair by 'id'. Use 'ground_truth' as reference answer for faithfulness and answer_relevancy metrics."
+  },
+  "ground_truths": [
+    {
+      "id": 1,
+      "ground_truth": "The reading time of this book is about 8 hours."
+    },
+    {
+      "id": 2,
+      "ground_truth": "A 2-minute assessment with 10 yes/no questions that tests your current expertise in building production-ready Agents and emails you a personalized list of chapters to read."
+    },
+    {
+      "id": 3,
+      "ground_truth": "1. Ask for a summary of recent AI research papers. 2. Review the response and realize you need sources. 3. Obtain a list of papers along with citations. 4. Find that some sources are outdated, so refine your query. 5. After multiple iterations, get a useful output. This requires the user to act as the decision-maker at every step."
+    },
+    {
+      "id": 4,
+      "ground_truth": "A Research Agent autonomously searches and retrieves relevant AI research papers from arXiv, Semantic Scholar, or Google Scholar without constant human guidance."
+    },
+    {
+      "id": 5,
+      "ground_truth": "Filtering Agent scans retrieved papers and identifies the most relevant ones based on citation count, publication date, and keywords. Summarization Agent extracts key insights and condenses them into an easy-to-read report. Formatting Agent structures the final report professionally."
+    },
+    {
+      "id": 6,
+      "ground_truth": "AI Agents are autonomous systems that can reason, think, plan, figure out the relevant sources and extract information from them when needed, take actions, and even correct themselves if something goes wrong."
+    },
+    {
+      "id": 7,
+      "ground_truth": "Memory, LLM (the brain), and Tools."
+    },
+    {
+      "id": 8,
+      "ground_truth": "Here, the AI agents not only execute the research process end-to-end but also self-refine their outputs, ensuring the final report is comprehensive, up-to-date, and well-structured — all without requiring human intervention at every step."
+    },
+    {
+      "id": 9,
+      "ground_truth": "The visual showing a user at a laptop interacting with ChatGPT (with arrows for 'Do this / Change this / Update this' and 'Output') versus the agentic multi-step workflow with specialized agents."
+    },
+    {
+      "id": 10,
+      "ground_truth": "Reason, think, plan, figure out relevant sources, extract information, take actions, and correct themselves if something goes wrong."
+    },
+    {
+      "id": 11,
+      "ground_truth": "AI agents handle the full end-to-end process autonomously and self-refine outputs, removing the need for the user to act as decision-maker at every iterative step."
+    },
+    {
+      "id": 12,
+      "ground_truth": "AI Agents are far more autonomous and capable of handling complex, multi-step workflows with self-correction compared to using an LLM alone."
+    },
+    {
+      "id": 13,
+      "ground_truth": "LLM is the brain. RAG is feeding that brain with fresh information. An agent is the decision-maker that plans and acts using the brain and the tools."
+    },
+    {
+      "id": 14,
+      "ground_truth": "An LLM like GPT-4 is trained on massive text data. It can reason, generate, and summarize but only using what it already knows (its training data). It is smart but static — it can't access the web, call APIs, or fetch new facts on its own."
+    },
+    {
+      "id": 15,
+      "ground_truth": "It can't access the web, call APIs, or fetch new facts on its own."
+    },
+    {
+      "id": 16,
+      "ground_truth": "RAG enhances an LLM by retrieving external documents (from a vector DB, search engine, etc.) and feeding them into the LLM as context before generating a response. This makes the LLM aware of updated, relevant info without retraining."
+    },
+    {
+      "id": 17,
+      "ground_truth": "External documents from a vector database, search engine, or other sources, which are then fed into the LLM as context."
+    },
+    {
+      "id": 18,
+      "ground_truth": "An Agent adds autonomy. It doesn't just answer a question — it decides what steps to take (call a tool? Search the web? Summarize? Store info?). It uses an LLM, calls tools, makes decisions, and orchestrates workflows."
+    },
+    {
+      "id": 19,
+      "ground_truth": "It decides what steps to take, calls tools, makes decisions, and orchestrates workflows just like a real assistant."
+    },
+    {
+      "id": 20,
+      "ground_truth": "Three icons side-by-side: Agent (robot with tools), LLM (chat bubble), RAG (document), with labels showing Agent thinks and acts, LLM is smart but static, and RAG retrieves fresh knowledge."
+    },
+    {
+      "id": 21,
+      "ground_truth": "It doesn't just answer a question — it decides what steps to take, calls tools, makes decisions, and orchestrates workflows just like a real assistant."
+    },
+    {
+      "id": 22,
+      "ground_truth": "An Agent adds autonomy and decision-making on top of LLM reasoning and RAG's fresh knowledge."
+    },
+    {
+      "id": 23,
+      "ground_truth": "1. Role-playing  2. Focus/Tasks  3. Tools  4. Cooperation  5. Guardrails  6. Memory"
+    },
+    {
+      "id": 24,
+      "ground_truth": "A generic AI assistant may give vague answers. But defining a specific role (e.g., 'Senior contract lawyer') shapes the agent's reasoning and retrieval process, leading to more precise, context-aware, and relevant outputs."
+    },
+    {
+      "id": 25,
+      "ground_truth": "Because role assignment shapes the agent's reasoning and retrieval process. The more specific the role, the sharper and more relevant the output."
+    },
+    {
+      "id": 26,
+      "ground_truth": "Overloading leads to confusion, inconsistency, and poor results. Giving an agent too many tasks or too much data doesn't help — it hurts performance."
+    },
+    {
+      "id": 27,
+      "ground_truth": "Specialized agents perform better every time. Instead of trying to make one agent do everything, using multiple agents each with a specific and narrow focus leads to higher quality results."
+    },
+    {
+      "id": 28,
+      "ground_truth": "A marketing agent should stick to messaging, tone, and audience — not pricing or market analysis."
+    },
+    {
+      "id": 29,
+      "ground_truth": "Search the web for real-time data, retrieve structured information from APIs and databases, execute code to perform calculations or data transformations, and analyze images, PDFs, and documents beyond just text inputs."
+    },
+    {
+      "id": 30,
+      "ground_truth": "Examples include: File Read tool, File Writer tool, Code Interpreter tool, Scrape Website tool, Server Dev tool, Directory Read Tool, Firecrawl Search tool, Browserbase Load Tool, PDF tool, GitHub Search tool, TXT Search tool, NL2SQL tool (among the 12 shown)."
+    },
+    {
+      "id": 31,
+      "ground_truth": "ExchangeRate-API (https://www.exchangerate-api.com/). The API key is stored in the .env file as EXCHANGE_RATE_API_KEY."
+    },
+    {
+      "id": 32,
+      "ground_truth": "class CurrencyConverterInput(BaseModel): amount: float = Field(..., description='The amount to convert.') from_currency: str = Field(..., description='The source currency code (e.g., \"USD\").') to_currency: str = Field(..., description='The target currency code (e.g., \"EUR\").')"
+    },
+    {
+      "id": 33,
+      "ground_truth": "The `_run` method. It is executed whenever the Agent wants to make use of the tool."
+    },
+    {
+      "id": 34,
+      "ground_truth": "It constructs a URL to the ExchangeRate-API, fetches live conversion rates using requests.get(), validates the response, calculates the converted amount, and returns a formatted string with the result (or an error message if the request fails or the currency is invalid)."
+    },
+    {
+      "id": 35,
+      "ground_truth": "By passing it in the `tools=[CurrencyConverterTool()]` parameter when creating the Agent."
+    },
+    {
+      "id": 36,
+      "ground_truth": "It makes the tool reusable across multiple agents and flows via a simple server, instead of embedding the tool directly in every Crew."
+    },
+    {
+      "id": 37,
+      "ground_truth": "SSE (Server-Sent Events): mcp.run(transport=\"sse\")"
+    },
+    {
+      "id": 38,
+      "ground_truth": "By importing MCPServerAdapter from crewai_tools, defining server_params with the URL and transport, and then passing the discovered tool to the Agent via tools=[...]."
+    },
+    {
+      "id": 39,
+      "ground_truth": "http://localhost:8081/sse"
+    },
+    {
+      "id": 40,
+      "ground_truth": "A formatted string like: \"100 USD = 8734.13 INR (Rate: 87.3413)\""
+    },
+    {
+      "id": 41,
+      "ground_truth": "Multi-agent systems work best when agents collaborate and exchange feedback. Instead of one agent doing everything, a team of specialized agents can split tasks and improve each other's outputs."
+    },
+    {
+      "id": 42,
+      "ground_truth": "One agent gathers data, another assesses risk, a third builds strategy, and a fourth writes the report."
+    },
+    {
+      "id": 43,
+      "ground_truth": "Limiting tool usage, setting validation checkpoints, and establishing fallback mechanisms (e.g., another agent or human reviewer intervenes if an agent fails)."
+    },
+    {
+      "id": 44,
+      "ground_truth": "Without constraints, agents can go off track — they might hallucinate, loop endlessly, or make bad calls. Guardrails ensure agents stay on track and maintain quality standards."
+    },
+    {
+      "id": 45,
+      "ground_truth": "Short-term memory (exists only during execution), Long-term memory (persists after execution), and Entity memory (stores information about key subjects discussed)."
+    },
+    {
+      "id": 46,
+      "ground_truth": "Memory allows the agent to recall past lessons, tailor feedback, and avoid repetition."
+    },
+    {
+      "id": 47,
+      "ground_truth": "Without memory, an agent would start fresh every time, losing all context from previous interactions."
+    },
+    {
+      "id": 48,
+      "ground_truth": "Guardrails prevent agents from hallucinating, looping endlessly, or making bad calls by limiting tool usage, enforcing validation checkpoints, and providing fallback mechanisms."
+    },
+    {
+      "id": 49,
+      "ground_truth": "Guardrails act as constraints that keep the agent aligned with the Objective while protecting against deviation."
+    },
+    {
+      "id": 50,
+      "ground_truth": "Memory is one of the most critical components because it allows agents to improve over time, remember past actions, and create more cohesive responses."
+    },
+    {
+      "id": 51,
+      "ground_truth": "The AI reviews its own work to spot mistakes and iterates until it produces the final response."
+    },
+    {
+      "id": 52,
+      "ground_truth": "Tools allow LLMs to gather more information by querying a vector database, executing Python scripts, or invoking APIs. This helps because the LLM is not solely reliant on its internal knowledge."
+    },
+    {
+      "id": 53,
+      "ground_truth": "ReAct combines Reflection and Tool Use. The Agent operates in a loop of Thought → Action → Observation, repeating until it reaches a solution or final answer. It is analogous to how humans solve problems."
+    },
+    {
+      "id": 54,
+      "ground_truth": "Frameworks like CrewAI primarily use the ReAct pattern by default. Many agent outputs show a series of 'Thought' steps before producing a response."
+    },
+    {
+      "id": 55,
+      "ground_truth": "Instead of solving a task in one go, the AI creates a roadmap by subdividing tasks and outlining objectives. In CrewAI, specify `planning=True` to use it."
+    },
+    {
+      "id": 56,
+      "ground_truth": "There are several agents, each with a specific role and task. Each agent can also access tools. All agents work together to deliver the final outcome, while delegating tasks to other agents if needed."
+    },
+    {
+      "id": 57,
+      "ground_truth": "The LLM (e.g., DeepSeek) generates an initial output, then reflects/iterates on it (often using another LLM call) to produce a refined final output."
+    },
+    {
+      "id": 58,
+      "ground_truth": "By giving the LLM access to external tools (vector DB, code execution, APIs), it can gather fresh information beyond its training data."
+    },
+    {
+      "id": 59,
+      "ground_truth": "The output shows multiple highlighted 'Thought:' steps where the agent reasons about the task, decides on actions, observes results, and continues until it can give a final answer."
+    },
+    {
+      "id": 60,
+      "ground_truth": "In CrewAI, specify `planning=True` when creating the Crew or Agent to enable the Planning pattern."
+    },
+    {
+      "id": 61,
+      "ground_truth": "Agentic behaviors allow LLMs to refine their output by incorporating self-evaluation (Reflection), external tool use, planning, and collaboration (Multi-Agent). The five patterns work together to make agents more reliable and capable."
+    },
+    {
+      "id": 62,
+      "ground_truth": "Reflection focuses on self-review and iteration of generated text. ReAct adds a closed-loop of reasoning + tool use + observation, making it more action-oriented and suitable for tool-heavy workflows."
+    },
+    {
+      "id": 63,
+      "ground_truth": "Reflection: Self-editing reports or code. Tool Use: Research agents fetching live data. ReAct: Autonomous problem-solving agents. Planning: Complex project breakdown. Multi-Agent: Collaborative systems like flight/hotel finders."
+    },
+    {
+      "id": 64,
+      "ground_truth": "Reflection solves poor initial outputs. Tool Use solves knowledge cutoff. ReAct solves multi-step reasoning with tools. Planning solves overwhelming complex tasks. Multi-Agent solves problems requiring specialization and collaboration."
+    },
+    {
+      "id": 65,
+      "ground_truth": "The Planner generates a list of tasks. Then a single task is executed by a ReAct Agent. If not finished, it loops; if finished, it produces the final response."
+    },
+    {
+      "id": 66,
+      "ground_truth": "Agents can delegate tasks to other specialized agents (e.g., PM agent delegates to DevOps or Tech Lead agents)."
+    },
+    {
+      "id": 67,
+      "ground_truth": "A cycle: Thought → Action → Observation → Answer, with feedback loops showing the agent reasoning before acting with tools."
+    },
+    {
+      "id": 68,
+      "ground_truth": "It solves complex tasks more effectively by breaking them down into smaller, manageable steps instead of trying to solve everything in one go."
+    },
+    {
+      "id": 69,
+      "ground_truth": "By showing real agent outputs that contain multiple 'Thought:' blocks where the agent reasons step-by-step before taking actions or giving final answers."
+    },
+    {
+      "id": 70,
+      "ground_truth": "Agentic behaviors (self-evaluation, planning, and collaboration) allow LLMs to produce significantly better, more reliable outputs than simple prompting."
+    },
+    {
+      "id": 71,
+      "ground_truth": "A human guides the entire flow. The LLM is just a generic responder that receives an input and produces an output. It has little control over the program flow."
+    },
+    {
+      "id": 72,
+      "ground_truth": "A human defines the paths/functions that exist in the flow. The LLM makes basic decisions on which function or path it can take."
+    },
+    {
+      "id": 73,
+      "ground_truth": "The LLM can choose between predefined paths (e.g., Route 1 or Route 2) but does not create new paths or control complex execution."
+    },
+    {
+      "id": 74,
+      "ground_truth": "A human defines a set of tools the LLM can access. The LLM decides when to use them and also the arguments for execution. It has more autonomy than lower levels."
+    },
+    {
+      "id": 75,
+      "ground_truth": "A manager agent coordinates multiple sub-agents and decides the next steps iteratively. The LLM controls execution flow."
+    },
+    {
+      "id": 76,
+      "ground_truth": "A human lays out the hierarchy between agents, their roles, tools, etc. The LLM (Manager) then controls the flow and delegation."
+    },
+    {
+      "id": 77,
+      "ground_truth": "The LLM generates and executes new code independently, effectively acting as an independent AI developer. It has the highest level of autonomy."
+    },
+    {
+      "id": 78,
+      "ground_truth": "New code. It can generate code, run it, observe results, and iterate autonomously."
+    },
+    {
+      "id": 79,
+      "ground_truth": "Level 1: Human controls everything. Level 2: LLM chooses from human-defined paths. Level 3: LLM decides tool use. Level 4: LLM (Manager) controls multi-agent flow. Level 5: LLM acts as independent developer with full code generation and execution autonomy."
+    },
+    {
+      "id": 80,
+      "ground_truth": "Level 5: Autonomous pattern."
+    },
+    {
+      "id": 81,
+      "ground_truth": "Increasing autonomy: from human-controlled responder → router → tool-calling → manager-controlled multi-agent → fully autonomous code-generating agent."
+    },
+    {
+      "id": 82,
+      "ground_truth": "Level 1: Basic Responder."
+    },
+    {
+      "id": 83,
+      "ground_truth": "Progressively more control is given to the LLM: from almost none (Level 1) to choosing paths (Level 2), using tools (Level 3), managing other agents (Level 4), and finally generating/executing its own code (Level 5)."
+    },
+    {
+      "id": 84,
+      "ground_truth": "A Generator Agent produces output, which goes to a Validator Agent. Feedback loops back, and only when validated does it produce the Final response."
+    },
+    {
+      "id": 85,
+      "ground_truth": "Agentic AI systems range from simple responders to fully autonomous agents that can generate and execute code independently. The level determines how much control the LLM has over the workflow."
+    },
+    {
+      "id": 86,
+      "ground_truth": "#1 Agentic RAG, #2 Voice RAG Agent, #3 Multi-agent Flight finder, #4 Financial Analyst, #5 Brand Monitoring System, #6 Multi-agent Hotel Finder, #7 Multi-agent Deep Researcher, #8 Human-like Memory for Agents, #9 Multi-agent Book Writer, #10 Multi-agent Content Creation System, #11 Documentation Writer Flow, #12 News Generator."
+    },
+    {
+      "id": 87,
+      "ground_truth": "Build a RAG pipeline with agentic capabilities that can dynamically fetch context from different sources (vector DB and the internet)."
+    },
+    {
+      "id": 88,
+      "ground_truth": "CrewAI for Agent orchestration, Firecrawl for web search, LightningAI's LitServe for deployment, and a vector database tool."
+    },
+    {
+      "id": 89,
+      "ground_truth": "The Retriever Agent accepts the user query, invokes the relevant tool (Firecrawl web search or vector DB tool) to get context and generate insights. The Writer Agent then generates the final response using those insights."
+    },
+    {
+      "id": 90,
+      "ground_truth": "Qwen 3 via Ollama (local model)."
+    },
+    {
+      "id": 91,
+      "ground_truth": "FirecrawlWebSearchTool and VectorDBSearchTool."
+    },
+    {
+      "id": 92,
+      "ground_truth": "class AgenticRAGAPI(ls.API):"
+    },
+    {
+      "id": 93,
+      "ground_truth": "setup(self, device), decode_request(self, request), predict(self, query), encode_response(self, output)."
+    },
+    {
+      "id": 94,
+      "ground_truth": "It extracts the user query from the incoming request body."
+    },
+    {
+      "id": 95,
+      "ground_truth": "It takes the decoded query and passes it to the Crew (researcher_agent + writer_agent) using crew.kickoff(inputs={\"query\": query}), then returns the result."
+    },
+    {
+      "id": 96,
+      "ground_truth": "It post-processes the response and sends it back to the client (returns the final output)."
+    },
+    {
+      "id": 97,
+      "ground_truth": "LitServe provides a clean, production-ready way to deploy the CrewAI-powered Agentic RAG as a scalable API service with proper request/response handling."
+    },
+    {
+      "id": 98,
+      "ground_truth": "#8 Human-like Memory for Agents"
+    },
+    {
+      "id": 99,
+      "ground_truth": "Examples: #3 Multi-agent Flight finder, #6 Multi-agent Hotel Finder, #9 Multi-agent Book Writer, #10 Multi-agent Content Creation System, #7 Multi-agent Deep Researcher."
+    },
+    {
+      "id": 100,
+      "ground_truth": "Start simple, use specialized agents with clear roles, leverage patterns like ReAct and Planning, implement proper guardrails and memory, and deploy using frameworks like CrewAI + LitServe for production readiness. Always focus on measurable business impact and reproducibility."
+    }
+  ]
+}
